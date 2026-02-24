@@ -191,10 +191,115 @@
             <li> Sliders</li>
 
         </ul>
-
-
     </div>
- <script src="lab4.js"></script>
+    <h2 id="jsbasico">Javascript intro</h2>
+        <p>
+            <strong> ¿Cual es la diferencia entre Java y Javascript</strong>
+            Java es compilado y Javascript es interpretado. Javascript lo entiende el explorador web y se puede ejecutar ahí.<br>
+            Java se ejecuta en JVM. Sus tipados son fuerte y debil respectivamente y Javascript también es de tipado dinámico.
+            
+            <strong>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</strong>
+            <ul>
+                <li>now()</li>
+                <li>getMonth()</li>
+                <li>getDay()</li>
+                <li>getHours()</li>
+                <li>get.Date()</li>
+            </ul>
+            <strong>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</strong>
+            <ul>
+                <li>push()</li>
+                <li>pop()</li>
+                <li>shift()</li>
+                <li>splice()</li>
+                <li>unshift()</li>
+            </ul>
+            <strong>¿Cómo se declara una variable con alcance local dentro de una función?</strong>
+            Se declara con let o const. Esas tienen un alcance local de bloque.
+            <strong>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</strong>
+            Se puede acceder en cualquier parte del programa y se puede usar o modificar desde cualquier parte.Es útil cuando los datos deben compartirse.
+        </p>
 
+       <h2>Tienda en Línea: PawFriend</h2>
+  <p>Hola! Nuestros productos tienen las mejores ofertas para ti. Encuentra lo que necesitas.</p>
+
+  <div class="Productos">
+
+    <div class="caja">
+      <h3>Bracalete de la amistad para mascota</h3>
+      <p>Comparte un bracalete matching para reforzar el vínculo con tu mascota</p>
+      <img src="frienshipbracelete.png" width="100" height="85">
+      <div class="precio">$600</div>
+      <label>Cantidad:</label>
+      <div class="control-cantidad">
+        <button onclick="cambiar('p1', -1)">−</button>
+        <input type="number" id="qty-p1" value="0" min="0" max="10" oninput="actualizar()">
+        <button onclick="cambiar('p1', 1)">+</button>
+      </div>
+      <span class="error" id="err-p1"></span>
+    </div>
+
+    <div class="caja">
+      <h3>Sueter Navideño</h3>
+      <p>Viste a tu mascota según la temporada invernal</p>
+      <img src="sueternavidad.png" width="100" height="85">
+      <div class="precio">$350</div>
+      <label>Cantidad:</label>
+      <div class="control-cantidad">
+        <button onclick="cambiar('p2', -1)">−</button>
+        <input type="number" id="qty-p2" value="0" min="0" max="10" oninput="actualizar()">
+        <button onclick="cambiar('p2', 1)">+</button>
+      </div>
+      <span class="error" id="err-p2"></span>
+    </div>
+
+    <div class="caja">
+      <h3>Bebedero/comedor inteligente</h3>
+      <p>Que a tu mascota nunca le falten alimentos incluso si tu no estás.</p>
+      <img src="bebdero.png" width="100" height="85">
+      <div class="precio">$430</div>
+      <label>Cantidad:</label>
+      <div class="control-cantidad">
+        <button onclick="cambiar('p3', -1)">−</button>
+        <input type="number" id="qty-p3" value="0" min="0" max="10" oninput="actualizar()">
+        <button onclick="cambiar('p3', 1)">+</button>
+      </div>
+      <span class="error" id="err-p3"></span>
+    </div>
+
+    <div class="caja">
+      <h3>Cobija con cara de mascota</h3>
+      <p>Personaliza una frazada para compartirla con tu peludo</p>
+      <img src="cobijamascot.png" width="100" height="85">
+      <div class="precio">$700</div>
+      <label>Cantidad:</label>
+      <div class="control-cantidad">
+        <button onclick="cambiar('p4', -1)">−</button>
+        <input type="number" id="qty-p4" value="0" min="0" max="10" oninput="actualizar()">
+        <button onclick="cambiar('p4', 1)">+</button>
+      </div>
+      <span class="error" id="err-p4"></span>
+    </div>
+
+  </div>
+
+  
+  <div class="Resumen">
+    <h3>Resumen</h3>
+    <p>Bracalete: <span id="sum-p1">0 unidades — $0</span></p>
+    <p>Sueter: <span id="sum-p2">0 unidades — $0</span></p>
+    <p>Bebedero: <span id="sum-p3">0 unidades — $0</span></p>
+    <p>Cobija: <span id="sum-p4">0 unidades — $0</span></p>
+    <hr>
+    <p>Subtotal: <strong id="subtotal">$0</strong></p>
+    <p>IVA (16%): <strong id="iva">$0</strong></p>
+    <p>Total: <strong id="total">$0</strong></p>
+    <button class="comprar" id="btn-comprar" disabled onclick="confirmar()">Comprar</button>
+  </div>
+
+  <script src="lab6.js"></script>
+
+</body>
+</html>
     </body>
 </html>

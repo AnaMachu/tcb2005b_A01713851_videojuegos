@@ -21,7 +21,7 @@ function palindromo(n) {
     while (num1 > 0) {
         let digito = num1 % 10;
         num2 = num2 * 10 + digito;
-        num1 = Math.trunc(num1 / 10); // división entera como en C++
+        num1 = Math.trunc(num1 / 10); 
     }
 
     return n === num2;
@@ -246,3 +246,5 @@ const server = http.createServer((request, response) => {
 server.listen(3000, () => {
     console.log('Servidor en http://localhost:3000');
 });
+
+

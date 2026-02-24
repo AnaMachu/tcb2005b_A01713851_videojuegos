@@ -1,0 +1,70 @@
+header h1,header p{color:#fff}body{margin:0;font-family:Helvetica,Arial,sans-serif;line-height:1.5;color:#566b78}header{background-image:url(headerimach.jpg);background-color:#263d36;background-position:center top;background-repeat:no-repeat;background-size:cover;line-height:1.2;padding:10vw 2em;text-align:center}header h1{font-size:2.5em;font-weight:300}nav{color:purple}html{scroll-behavior:smooth}.contenido{max-width:50em;margin:0 auto;padding:2em}
+
+.Productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.caja {
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 180px;
+}
+
+.precio {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+label {
+  font-size: 0.85rem;
+}
+
+.control-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.control-cantidad button {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.control-cantidad input {
+  width: 45px;
+  height: 28px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 0.75rem;
+  display: block;
+  min-height: 15px;
+}
+
+.Resumen {
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.comprar {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.comprar:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
