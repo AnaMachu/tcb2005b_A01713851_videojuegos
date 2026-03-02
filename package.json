@@ -1,0 +1,31 @@
+{
+  "name": "tcb2005b_a01713851",
+  "version": "1.0.0",
+  "description": "Clase laboratorio 11",
+  "keywords": [
+    "node",
+    "express",
+    "js"
+  ],
+  "homepage": "https://github.com/AnaMachu/tcb2005b_A01713851#readme",
+  "bugs": {
+    "url": "https://github.com/AnaMachu/tcb2005b_A01713851/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaMachu/tcb2005b_A01713851.git"
+  },
+  "license": "ISC",
+  "author": "Ana Machuca",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch npmclass.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  }
+}

@@ -1,3 +1,4 @@
+
 console.log("hola desde node");
 const filesystem = require('fs');
 filesystem.writeFileSync('hola.txt','hola desde node');
@@ -14,8 +15,29 @@ const http = require('http');
 const server = http.createServer((request,response) =>{
     //console.log(request);
     //console.log(request.url);
-    response.end()
+    //console.log(response)
+    //response.end()
+    //response.setHeader
 
 });
 
 server.listen(3000);
+
+//const html()
+
+const express = require('express');
+const app = express();
+
+//Middleware
+app.use((request, response, next) => {
+    console.log('Middleware!');
+    next(); //Le permite a la petición avanzar hacia el siguiente middleware
+});
+
+app.use((request, response, next) => {
+    console.log('Otro middleware!');
+    response.send('¡Hola mundo!'); //Manda la respuesta
+});
+
+app.listen(3000);
+                            
