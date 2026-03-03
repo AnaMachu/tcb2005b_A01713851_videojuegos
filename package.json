@@ -1,0 +1,24 @@
+{
+  "name": "tcb2005b_a01713851",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/AnaMachu/tcb2005b_A01713851#readme",
+  "bugs": {
+    "url": "https://github.com/AnaMachu/tcb2005b_A01713851/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaMachu/tcb2005b_A01713851.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1"
+  }
+}
