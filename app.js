@@ -1,32 +1,14 @@
-
-//console.log("hola desde node");
-//const filesystem = require('fs');
-//filesystem.writeFileSync('hola.txt','hola desde node');
-
-//const arreglo=[5000,60,90,100,10,20,1000,0,120,200,340,10000,50];
-//for (let item of arreglo){
-    //setTimeout(()=>{
-        console.log(item);
-    //},item);
-//}
-
-//const http = require('http');
-
-const server = http.createServer((request,response) =>{
-    //console.log(request);
-    //console.log(request.url);
-    //console.log(response)
-    //response.end()
-    //response.setHeader
-
-});
-
-server.listen(3000);
-
-//const html()
-
 const express = require('express');
 const app = express();
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended: false}));
+
+const rutaslab11 = require('./routes/lab11.routes');
+app.use('/lab11', rutaslab11);
+const rutasmod2 = require('./routes/module211.routes');
+app.use('/module211', rutasmod2);
+
 
 //Middleware
 app.use((request, response, next) => {
@@ -35,9 +17,7 @@ app.use((request, response, next) => {
 });
 
 app.use((request, response, next) => {
-    console.log('Otro middleware!');
-    response.send('¡Hola mundo!'); //Manda la respuesta
+  response.status(404).send("La página no existe");
 });
 
 app.listen(3000);
-                            
