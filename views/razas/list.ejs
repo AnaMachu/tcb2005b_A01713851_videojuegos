@@ -1,0 +1,11 @@
+<%- include('../include/_header') %>
+
+<h2 class="title">Razas Registradas</h2>
+<% for (let raza of razas) { %>
+  <div class="box">
+    <h3 class="subtitle"><%= raza.nombre %></h3>
+    <img src="<%= raza.foto %>" width="200">
+  </div>
+<% } %>
+
+<%- include('../include/_footer') %>
