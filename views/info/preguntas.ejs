@@ -1,6 +1,12 @@
 <%- include('../include/_header') %>
+<nav>
+       <a href="#metodos">Lab1</a> | <a href="#CSS">Lab3</a> | 
+       <a href="#jsbasico">Lab4</a> | <a href="#frameworks">Lab5</a> |
+       <a href="#js">Lab6</a> | <a href="#pj">Lab11</a> 
+       <a href="#node">Lab12</a> | <a href="#MVC">Lab13</a> 
+ 
+</nav>
 
- <div> 
          <h2 id="metodos"> Sobre: HTTPS, métodos, HTML4 y HTML 5, errores 400 y 500 y Ciclo de vida  de los SI</h2>
             <p> 
                 <i><strong>Cuál es la diferencia entre Internet y la World Wide Web?</strong></i><br>
@@ -84,7 +90,7 @@
     <hr>
 
  <div>
-     <h2 id="CSS"> CSS(Cascade Style Sheets)</h2>
+ <h2 id="CSS"> CSS(Cascade Style Sheets)</h2>
             <p>
                 <strong>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </strong> <br>
                 Se debe usar con moderación y en casos específicos. Como cuando se desea retirar algún contenido que no puedes entonces se usa el !important pra aanularlo<br>
@@ -146,7 +152,7 @@
             <strong>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</strong>
             Se puede acceder en cualquier parte del programa y se puede usar o modificar desde cualquier parte.Es útil cuando los datos deben compartirse.
         </p>
-    <h2> LAB 6</h2>
+<h2 id="js">POE</h2>
     <p>
         ¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor? <br>
         Mejora la experiencia de usuario y reduce carga al servidor, detectando errores como campos vacíos o emails mal formados de forma instantánea, sin necesidad de hacer una petición HTTP.<hr>
@@ -159,15 +165,15 @@
        <hr>
     </p>
 
-    <h2> LAB 11</h2>
+<h2 id="pj">Package json</h2>
     <p>
         <strong>Describe el archivo package.json.</strong>
         Es el archivo de configuración del proyecto Node.js. Contiene la identidad del proyecto con su nombre y versión, los scripts ejecutables con npm run <br>
          las dependencias necesarias en producción como express o ejs, y las dependencias de desarrollo como nodemon. Cuando alguien clona el repositorio y ejecuta npm install,<br>
           Node lee este archivo y descarga todo automáticamente, lo que permite reconstruir el entorno completo sin necesidad de subir la carpeta node_modules a Git.<br>
     </p>
-
-    <h2> LAB 12</h2>
+<hr>
+    <h2 id="node">Engines node</h2>
     <p>
         <strong>¿Qué otros templating engines existen para node?</strong>
         Existen varias alternativas a EJS. Pug (antes llamado Jade) usa indentación en lugar de HTML tradicional, lo que lo hace muy compacto y limpio. Handlebars y Mustache usan la sintaxis de dobles llaves {{ variable }} <br>
@@ -175,8 +181,12 @@
          EJS es el más accesible para principiantes por usar HTML normal, <br>
         mientras que Pug suele preferirse en proyectos más avanzados por su sintaxis compacta.<br>
     </p>
-
-
+<hr>
+<h2 id="MVC">MVC</h2>  
+    <p>
+        ¿Qué beneficios encuentras en el estilo MVC?<br>
+        ¿Encuentras alguna desventaja en el estilo arquitectónico MVC?<br>
+    </p>
 
 
 <%- include('../include/_footer') %>
