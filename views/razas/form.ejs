@@ -1,0 +1,20 @@
+<%- include('../include/_header') %>
+
+<h2 class="title">Agregar nueva raza</h2>
+<form action="/lab13/razas" method="POST" style="max-width: 480px;">
+  <div class="field">
+    <label class="label">Nombre de la raza</label>
+    <div class="control">
+      <input name="nombre" class="input" type="text" placeholder="Ej: Labrador" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">URL de la foto</label>
+    <div class="control">
+      <input name="foto" class="input" type="text" placeholder="https://..." required>
+    </div>
+  </div>
+  <input class="button is-primary" type="submit" value="Guardar raza">
+</form>
+
+<%- include('../include/_footer') %>
