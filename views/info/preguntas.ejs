@@ -4,7 +4,7 @@
        <a href="#metodos">Lab1</a> | <a href="#CSS">Lab3</a> | 
        <a href="#jsbasico">Lab4</a> | <a href="#frameworks">Lab5</a> |
        <a href="#js">Lab6</a> | <a href="#pj">Lab11</a> 
-       <a href="#node">Lab12</a> | <a href="#MVC">Lab13</a> 
+       <a href="#node">Lab12</a> | <a href="#MVC">Lab13</a> |<a href="#SQL">Lab17</a> 
  
 </nav>
 
@@ -195,6 +195,20 @@
          Para aplicaciones pequeñas y sencillas, el patrón puede añadir una complejidad innecesaria que ralentiza<br>
           el desarrollo sin ofrecer beneficios significativos. Además, existe una curva de aprendizaje para los desarrolladores <br>
           que se inician en el patrón, lo que puede ralentizar el desarrollo inicialmente mientras el equipo se adapta a la arquitectura.<br>
+    </p>
+     
+<h2 id="SQL">SQL</h2>     
+    <p>
+    ¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?<br>
+    Escribir el código SQL únicamente en la capa del modelo permite separar responsabilidades dentro de la aplicación, de modo que cada capa hace solo su trabajo: <br>
+    el modelo se comunica con la base de datos, el controlador maneja la lógica y la vista solo muestra los datos. Esto facilita el mantenimiento, ya que si la base de datos cambia, <br>
+    solo se modifica el modelo sin tocar el controlador ni la vista. También permite reutilizar métodos como fetchAll() desde cualquier parte de la aplicación, hace el código más legible <br>
+    y permite probar el modelo de forma independiente.<br>
+
+     ¿Qué es SQL injection y cómo se puede prevenir?<br>
+     SQL Injection es un ataque donde el usuario introduce código SQL malicioso a través de un campo del formulario para manipular las consultas a la base de datos. <br>
+     La forma de prevenirlo es usando consultas parametrizadas, también llamadas prepared statements, donde en lugar de concatenar el valor directamente en el query se usa un ? como placeholder. <br>
+     Esto hace que la librería, en este caso mysql2, trate el valor siempre como dato y nunca como código SQL, sin importar lo que el usuario haya escrito.<br>
     </p>
 
 
