@@ -17,6 +17,10 @@ app.use(session({
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
 
+const csrf = require('csurf');
+const csrfProtection = csrf();
+app.use(csrfProtection);
+
 
 app.use((request, response, next) => {
     console.log('Middleware!');
@@ -33,6 +37,10 @@ app.use('/lab13', rutaslab13);
 const rutasmod2 = require('./routes/mod213.routes');
 app.use('/mod213', rutasmod2);
 
+
+app.use((error, request, response, next) => {
+  response.status(500).send(`Error interno del servidor: ${error.stack}`);
+});
 
 app.use((request, response, next) => {
   response.status(404).send("La página no existe");
